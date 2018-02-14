@@ -22,61 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.exitButton = New System.Windows.Forms.Button()
         Me.greetingLabel = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.usaFlag = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.usaFlag, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'exitButton
         '
-        Me.exitButton.Location = New System.Drawing.Point(708, 259)
+        resources.ApplyResources(Me.exitButton, "exitButton")
+        Me.exitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.exitButton.Name = "exitButton"
-        Me.exitButton.Size = New System.Drawing.Size(159, 80)
-        Me.exitButton.TabIndex = 0
-        Me.exitButton.UseVisualStyleBackColor = True
+        Me.exitButton.UseVisualStyleBackColor = False
         '
         'greetingLabel
         '
+        resources.ApplyResources(Me.greetingLabel, "greetingLabel")
         Me.greetingLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.greetingLabel.Font = New System.Drawing.Font("Lucida Sans Unicode", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.greetingLabel.Location = New System.Drawing.Point(271, 25)
         Me.greetingLabel.Name = "greetingLabel"
-        Me.greetingLabel.Size = New System.Drawing.Size(318, 93)
-        Me.greetingLabel.TabIndex = 1
-        Me.greetingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Location = New System.Drawing.Point(442, 133)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(147, 64)
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
         '
         'usaFlag
         '
-        Me.usaFlag.Location = New System.Drawing.Point(274, 133)
+        resources.ApplyResources(Me.usaFlag, "usaFlag")
+        Me.usaFlag.Image = Global.WindowsApp2.My.Resources.Resources.usa_flag_wallpaper_01
         Me.usaFlag.Name = "usaFlag"
-        Me.usaFlag.Size = New System.Drawing.Size(147, 64)
-        Me.usaFlag.TabIndex = 4
         Me.usaFlag.TabStop = False
+        '
+        'PictureBox2
+        '
+        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.Image = Global.WindowsApp2.My.Resources.Resources.Belarus_flag_8
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(879, 351)
         Me.Controls.Add(Me.usaFlag)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.greetingLabel)
         Me.Controls.Add(Me.exitButton)
         Me.Name = "Form1"
-        Me.Text = "CS540 Assignment 3"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.usaFlag, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
