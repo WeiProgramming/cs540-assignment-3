@@ -25,10 +25,10 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.exitButton = New System.Windows.Forms.Button()
         Me.greetingLabel = New System.Windows.Forms.Label()
-        Me.usaFlag = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.usaFlag, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.usaPictureBox = New System.Windows.Forms.PictureBox()
+        Me.belarusPictureBox = New System.Windows.Forms.PictureBox()
+        CType(Me.usaPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.belarusPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'exitButton
@@ -44,37 +44,37 @@ Partial Class Form1
         Me.greetingLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.greetingLabel.Name = "greetingLabel"
         '
-        'usaFlag
+        'usaPictureBox
         '
-        resources.ApplyResources(Me.usaFlag, "usaFlag")
-        Me.usaFlag.Image = Global.WindowsApp2.My.Resources.Resources.usa_flag_wallpaper_01
-        Me.usaFlag.Name = "usaFlag"
-        Me.usaFlag.TabStop = False
+        resources.ApplyResources(Me.usaPictureBox, "usaPictureBox")
+        Me.usaPictureBox.Image = Global.WindowsApp2.My.Resources.Resources.usa_flag_wallpaper_01
+        Me.usaPictureBox.Name = "usaPictureBox"
+        Me.usaPictureBox.TabStop = False
         '
-        'PictureBox2
+        'belarusPictureBox
         '
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.Image = Global.WindowsApp2.My.Resources.Resources.Belarus_flag_8
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
+        resources.ApplyResources(Me.belarusPictureBox, "belarusPictureBox")
+        Me.belarusPictureBox.Image = Global.WindowsApp2.My.Resources.Resources.Belarus_flag_8
+        Me.belarusPictureBox.Name = "belarusPictureBox"
+        Me.belarusPictureBox.TabStop = False
         '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.usaFlag)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.usaPictureBox)
+        Me.Controls.Add(Me.belarusPictureBox)
         Me.Controls.Add(Me.greetingLabel)
         Me.Controls.Add(Me.exitButton)
         Me.Name = "Form1"
-        CType(Me.usaFlag, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.usaPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.belarusPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents exitButton As Button
     Friend WithEvents greetingLabel As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents usaFlag As PictureBox
+    Friend WithEvents belarusPictureBox As PictureBox
+    Friend WithEvents usaPictureBox As PictureBox
 End Class
